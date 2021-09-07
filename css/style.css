@@ -1,0 +1,64 @@
+body{
+    padding: 0px;
+    margin: 0px;
+
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-container{
+    margin-top: 3em;
+    width: 23em;
+    height: 23em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.buttons-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttons-container button{
+    border: 0px;
+    outline: hidden;
+    background-color: tomato;
+    height: 4em;
+    width: 4em;
+}
+.boton{
+    width: 5em;
+    height: 2em;
+    background-color: gray;
+}
+.imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation-name: thanos;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+.icon-style{
+    color: white;
+    font-size: 2em;
+}
+
+#barra{
+    width: 100%;
+}
+
+@keyframes thanos{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
