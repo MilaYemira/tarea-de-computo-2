@@ -25,13 +25,13 @@ body{
 .buttons-container button{
     border: 0px;
     outline: hidden;
-    background-color: tomato;
-    height: 4em;
-    width: 4em;
+    background-color:rgb(102, 67, 38);
+    height: 7em;
+    width: 7em;
 }
 .boton{
-    width: 5em;
-    height: 2em;
+    width:5em ;
+    height:2em ;
     background-color: gray;
 }
 .imagen{

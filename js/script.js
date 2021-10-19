@@ -4,8 +4,6 @@ const audio = document.getElementById("audio")
 const Pause_btn = document.getElementById("pause")
 const Stop_btn = document.getElementById("stop")
 const barra = document.getElementById("barra")
-const volume_up_btn = document.getElementById("volume-up")
-const volume_down_btn = document.getElementById("volume-down")
 
 let isplaying = false;
 
@@ -34,32 +32,4 @@ window.addEventListener("load",()=>{
 barra.addEventListener("change", ()=>{
     audio.currentTime = barra.value;
 
-})
-volume_up_btn.addEventListener('click', () =>{
-    audio.volume = audio.volume + 0.1;
-})
-volume_down_btn.addEventListener('click', () =>{
-    audio.volume = audio.volume - 0.1;
-})
-document.addEventListener("keyup", (event) =>{
-    if(event.key == "ArrowUp"){
-        audio.volume = audio.volume + 0.1;
-    }
-    else if(event.key == "ArrowDown"){
-        audio.volume = audio.volume - 0.1;
-    }
-})
-document.addEventListener("keyup", (event)=> {
-    if(event.keyCode == 32){
-        if(isplaying){
-            audio.pause();
-            imagen.style.animationPlayState = "paused"
-            isplaying = false;
-        }
-        else{
-            audio.play();
-            imagen.style.animationPlayState = "running"
-            isplaying = true;
-        }
-    }
 })
